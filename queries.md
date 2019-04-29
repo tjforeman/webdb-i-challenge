@@ -18,7 +18,11 @@ select * from orders order by orderdate desc
 
 ## find all suppliers who have names longer than 20 characters. You can use `length(SupplierName)` to get the length of the name. Returns 11 records.
 
+select * from suppliers where length(suppliername)>20
+
 ## find all customers that include the word "market" in the name. Should return 4 records.
+
+select * from customers where customername like '%market%'
 
 ## add a customer record for _"The Shire"_, the contact name is _"Bilbo Baggins"_ the address is _"1 Hobbit-Hole"_ in _"Bag End"_, postal code _"111"_ and the country is _"Middle Earth"_.
 
